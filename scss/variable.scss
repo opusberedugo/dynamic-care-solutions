@@ -1,0 +1,89 @@
+$colors: (
+  purple:#70088c,
+  pale-purple: #642d73,
+  blue:#071b8c,
+  green:#8ebf45,
+  white: #f2f2f2,
+  grey: #37373d
+);
+
+$sizes: (
+  10:10px,
+  20:20px,
+  30:30px,
+  40:40px,
+  50:50px,
+);
+
+@mixin  media-max($width) {
+  @media all and (max-width: $width) {
+    @content;
+  }
+}
+
+// Padding Classes
+@each $size-key, $size-value in $sizes {
+  .#{"p-"+$size-key}{
+    padding: $size-value;
+  }
+}
+
+// PaddingX classes
+@each $size-key, $size-value in $sizes {
+  .#{"px-"+$size-key}{
+    padding: 0 $size-value;
+  }
+}
+
+// paddingY classes
+@each $size-key, $size-value in $sizes {
+  .#{"py-"+$size-key}{
+    padding: $size-value;
+  }
+}
+
+// Decorating Lines for heading
+@each $color-name,
+$color-value in $colors {
+  .#{$color-name+"-line"} {
+    width: 350px;
+    margin: 0 auto;
+    border-top: 1px solid $color-name;
+    height: 5px;
+    @include media-max(350px){
+      width: 100%;
+    }
+  }
+}
+
+// opaque background colors
+@each $name,
+$color in $colors {
+  .#{$name+"-background"} {
+    background-color: $color;
+  }
+}
+
+// Transparent background colors
+@each $name,
+$color in $colors {
+  .#{"transparent-"+$name+"-background"} {
+    background-color: #{$color+"56"};
+  }
+}
+
+// Text colors
+@each $name,
+$color in $colors {
+  .#{$name+"-text"} {
+    color: $color;
+  }
+}
+
+// svg fills
+@each $color-name,
+$color-code in $colors {
+  .#{$color-name + "-fill"} {
+    fill: $color-code;
+  }
+}
