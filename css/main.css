@@ -81,7 +81,7 @@ a {
   border-top: 1px solid purple;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .purple-line {
     width: 100%;
   }
@@ -93,7 +93,7 @@ a {
   border-top: 1px solid pale-purple;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .pale-purple-line {
     width: 100%;
   }
@@ -105,7 +105,7 @@ a {
   border-top: 1px solid blue;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .blue-line {
     width: 100%;
   }
@@ -117,7 +117,7 @@ a {
   border-top: 1px solid green;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .green-line {
     width: 100%;
   }
@@ -129,7 +129,7 @@ a {
   border-top: 1px solid white;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .white-line {
     width: 100%;
   }
@@ -141,7 +141,7 @@ a {
   border-top: 1px solid grey;
   height: 5px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   .grey-line {
     width: 100%;
   }
