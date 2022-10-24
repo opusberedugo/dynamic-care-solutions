@@ -56,9 +56,9 @@ nav {
 section.hero {
   position: relative;
 
-  @include media-max(860px) {
+  @include media-max(4000px) {
     position: static;
-    background-image: linear-gradient(120deg, #000000cb, #000000cb), url('../img/cdc-GnLuuG9crEY-unsplash.jpg');
+    background-image: linear-gradient(120deg, #000000cb, #000000cb), url('../img/banner.jpg');
     background-size: cover;
   }
 
@@ -185,6 +185,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include media-max(450px){
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   .col {

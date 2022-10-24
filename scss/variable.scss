@@ -50,7 +50,7 @@ $color-value in $colors {
     margin: 0 auto;
     border-top: 1px solid $color-name;
     height: 5px;
-    @include media-max(350px){
+    @include media-max(400px){
       width: 100%;
     }
   }

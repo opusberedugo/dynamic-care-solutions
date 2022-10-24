@@ -81,7 +81,7 @@ a {
   border-top: 1px solid purple;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .purple-line {
     width: 100%;
   }
@@ -93,7 +93,7 @@ a {
   border-top: 1px solid pale-purple;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .pale-purple-line {
     width: 100%;
   }
@@ -105,7 +105,7 @@ a {
   border-top: 1px solid blue;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .blue-line {
     width: 100%;
   }
@@ -117,7 +117,7 @@ a {
   border-top: 1px solid green;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .green-line {
     width: 100%;
   }
@@ -129,7 +129,7 @@ a {
   border-top: 1px solid white;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .white-line {
     width: 100%;
   }
@@ -141,7 +141,7 @@ a {
   border-top: 1px solid grey;
   height: 5px;
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .grey-line {
     width: 100%;
   }
@@ -294,10 +294,10 @@ nav .options a:hover {
 section.hero {
   position: relative;
 }
-@media all and (max-width: 860px) {
+@media all and (max-width: 4000px) {
   section.hero {
     position: static;
-    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.7960784314), rgba(0, 0, 0, 0.7960784314)), url("../img/cdc-GnLuuG9crEY-unsplash.jpg");
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.7960784314), rgba(0, 0, 0, 0.7960784314)), url("../img/banner.jpg");
     background-size: cover;
   }
 }
@@ -411,6 +411,12 @@ footer .flex {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media all and (max-width: 450px) {
+  footer .flex {
+    text-align: center;
+    justify-content: center;
+  }
 }
 footer .col {
   padding: 10px 0;
